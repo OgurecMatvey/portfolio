@@ -23,9 +23,20 @@
         h1 {
             color: #333;
         }
-        img {
-            max-width: 200px;
+        /* Круглая форма для фото профиля */
+        .profile-img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
+            object-fit: cover;
+        }
+        /* Прямоугольные изображения для проектов */
+        .project-img {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
         }
         a {
             color: #3498db;
@@ -43,9 +54,8 @@
 
     <div class="container">
         <h1>Иванов Иван Иванович</h1>
-        <img src="Главная1.png" alt="Ваше фото" width="200" height="200">
+        <img src="Главная1.png" alt="Ваше фото" class="profile-img">
         <p>Добро пожаловать на мой сайт-портфолио! Здесь вы можете найти информацию обо мне, моих проектах и связаться со мной.</p>
-        
         
         <div class="contact-info">
             <p>Телефон: <a href="tel:+78584433459">+7 858 443 3459</a></p>
@@ -53,8 +63,8 @@
         </div>
         
         <p>Вот примеры сайтов, которые я делал.</p>
-        <img src="1proj.png" alt="Проект 1" width="200" height="200">
-        <img src="2proj.png" alt="Проект 2" width="200" height="200">
+        <img src="1proj.png" alt="Проект 1" class="project-img">
+        <img src="2proj.png" alt="Проект 2" class="project-img">
     </div>
 
 </body>
